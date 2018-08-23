@@ -17,10 +17,9 @@
      <h3>1. Personal information</h3>
      <hr>
      
-        <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*">     
-        <input id="phones" class="inputSmall" type="text" name="phones" placeholder="Phones*">  
-     
-     <input id="email" class="inputMedium" type="email" name="email" placeholder="Email*"> 
+    <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*">     
+    <input id="phones" class="inputSmall" type="text" name="phones" placeholder="Phones*">  
+    <input id="email" class="inputMedium" type="email" name="email" placeholder="Email*"> 
      <input id="ReEnterEmail" class="inputMedium" type="email" name="ReEnterEmail" placeholder="Re-enter email*"> <br />
      <input id="address1" class="inputLarge" type="text" name="address1" placeholder="Address*"> 
      <input id="address2" class="inputLarge" type="text" name="address2"> 
@@ -35,51 +34,58 @@
    <section>
     <h3>2. Skills and Location</h3>
     <hr>
-    <div>
-      <p>Which is your primary disign discipline?*</p>
+    <p>Which is your primary disign discipline?*</p>
+    <div class="buttons">
       <button>Design Research</button>
-      <button>Design Research</button>
-      <button>Design Research</button>
-      <button>Design Research</button>
+      <button>Visual Design</button>
+      <button>UX design</button>
+      <button>Front-end Dev</button>
     </div>  
-    <div>
-      <p>Do you have experience with any other disciplines?</p>
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />
-      <input type="checkbox" name="UXDesign" id="UXDesign">
-      <label for="UXDesign">UX Design</label><br />
-      <input type="checkbox" name="feDev" id="feDev">
-      <label for="feDev">Front-end Development</label>
-    </div> 
-    <div>
-      <p>Where are you interested in working*?</p>
-      <small>You must be legally authorized to work without visa sponsership in the location(S) you choose.</small>
-      <br />
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />
-      <input type="checkbox" name="UXDesign" id="UXDesign">
-      <label for="UXDesign">UX Design</label><br />
-      <input type="checkbox" name="feDev" id="feDev">
-      <label for="feDev">Front-end Development</label> <br />
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />      
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> <br />
-      <input type="checkbox" name="visualDesign" id="visualDesign">
-      <label for="visualDesign">Visual Design</label> 
-    </div>  
+    <div class= "choices">
+        <div class="intersts">
+            <p>Do you have experience with any other disciplines?</p>
+            
+            <input type="checkbox" name="visualDesign" id="visualDesign">
+            <label for="visualDesign">Visual Design</label> <br />
+            <input type="checkbox" name="UXDesign" id="UXDesign">
+            <label for="UXDesign">UX Design</label><br />
+            <input type="checkbox" name="feDev" id="feDev">
+            <label for="feDev">Front-end Development</label>
+          </div> 
+          <div class="locations">
+            <p>Where are you interested in working*?</p>
+            <small>You must be legally authorized to work without visa sponsership in the location(S) you choose.</small>
+            <br />
+            <input type="checkbox" name="Texas" id="Texas">
+            <label for="Texas">Austin Texas</label> <br />
+            <input type="checkbox" name="York" id="York">
+            <label for="York">New York</label><br />
+            <input type="checkbox" name="Canada" id="Canada">
+            <label for="Canada">Toronto, Canada</label> <br />
+            <input type="checkbox" name="China" id="China">
+            <label for="China">Shangai China</label> <br />
+            <input type="checkbox" name="Ireland" id="Ireland">
+            <label for="visualDesign">Dublin, Ireland</label> <br />      
+            <input type="checkbox" name="Hursley" id="Hursley">
+            <label for="visualDesign">Hursley, United Kingdom</label> <br />
+            <input type="checkbox" name="Germany" id="Germany">
+            <label for="visualDesign">Boeblingen, Germany</label> <br />
+            <input type="checkbox" name="Somewhere" id="Somewhere">
+            <label for="visualDesign">Somewhere else</label> 
+          </div>
+    </div>
+      
    </section>
    <section>
     <h3>3. Portfolio</h3>
-    <p>Prove you're IBM's next great desinger by showing us who your are. What you have done. How you think. Tell us your story. </p>
     <hr>
-    <input id="portfolio" type="text" name="portfolio" placeholder="Portfolio link*">
-    <textarea name="another" id="another" cols="30" rows="10" placeholder="anything else"></textarea>
-   </section>
+    <p>Prove you're IBM's next great desinger by showing us who your are. What you have done. How you think. Tell us your story. </p>
+    <input id="portfolio" class="inputLarge" type="url" name="portfolio" placeholder="Portfolio link*">
+    <br />
+    <br />
+    <textarea name="another" id="another" cols="30" rows="10" placeholder="anything else(another link availability)?"></textarea>
+    <br />
+  </section>
    <button type="submit">Submit</button>
   </form> 
 </body>

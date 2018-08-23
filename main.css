@@ -1,0 +1,64 @@
+/* general styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #454E57;
+  color: white;
+}
+
+section {
+  margin-top: 30px;
+}
+
+/* header*/
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* form */
+
+form {
+  margin: 30px auto;
+  width: 80%;
+}
+
+
+input {
+  margin-top: 2%;  
+  border: none;
+  background: #454E57;
+  border-bottom: 1px solid #6E757F;
+}
+
+.inputSmall{
+  width: 23%;  
+  margin-right: 17px;
+
+}
+.inputMedium {
+  width: 72%;
+  margin-right: 29px;
+}
+
+.inputLarge {
+  width: 100%;
+}
+
+#address1 {
+  margin-top: 40px;
+}
+
+#aboutUS {
+      margin-top: 40px;
+}
+
+
+
+

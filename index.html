@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HTML5 built-in Form validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <header>
+      <h1>Let's Talk</h1>
+      <p>Think you have what it takes? show us.</p>
+  </header>  
+  <form>
+   <section class="personalInfo">
+     <h3>1. Personal information</h3>
+     <hr>
+     
+        <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*">     
+        <input id="phones" class="inputSmall" type="text" name="phones" placeholder="Phones*">  
+     
+     <input id="email" class="inputMedium" type="email" name="email" placeholder="Email*"> 
+     <input id="ReEnterEmail" class="inputMedium" type="email" name="ReEnterEmail" placeholder="Re-enter email*"> <br />
+     <input id="address1" class="inputLarge" type="text" name="address1" placeholder="Address*"> 
+     <input id="address2" class="inputLarge" type="text" name="address2"> 
+     
+        <input id="city" class="inputSmall" type="text" name="city" placeholder="City*">
+        <input id="state" class="inputSmall" type="text" name="state" placeholder="State">
+        <input id="country" class="inputSmall" type="text" name="country" placeholder="Country/Region*">
+        <input id="zip" class="inputSmall" type="text" name="zip" placeholder="Zip/Postal code">
+         
+     <input id="aboutUS" class="inputLarge" type="text" name="aboutUS" placeholder="How did you hear about us">
+   </section>
+   <section>
+    <h3>2. Skills and Location</h3>
+    <hr>
+    <div>
+      <p>Which is your primary disign discipline?*</p>
+      <button>Design Research</button>
+      <button>Design Research</button>
+      <button>Design Research</button>
+      <button>Design Research</button>
+    </div>  
+    <div>
+      <p>Do you have experience with any other disciplines?</p>
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />
+      <input type="checkbox" name="UXDesign" id="UXDesign">
+      <label for="UXDesign">UX Design</label><br />
+      <input type="checkbox" name="feDev" id="feDev">
+      <label for="feDev">Front-end Development</label>
+    </div> 
+    <div>
+      <p>Where are you interested in working*?</p>
+      <small>You must be legally authorized to work without visa sponsership in the location(S) you choose.</small>
+      <br />
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />
+      <input type="checkbox" name="UXDesign" id="UXDesign">
+      <label for="UXDesign">UX Design</label><br />
+      <input type="checkbox" name="feDev" id="feDev">
+      <label for="feDev">Front-end Development</label> <br />
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />      
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> <br />
+      <input type="checkbox" name="visualDesign" id="visualDesign">
+      <label for="visualDesign">Visual Design</label> 
+    </div>  
+   </section>
+   <section>
+    <h3>3. Portfolio</h3>
+    <p>Prove you're IBM's next great desinger by showing us who your are. What you have done. How you think. Tell us your story. </p>
+    <hr>
+    <input id="portfolio" type="text" name="portfolio" placeholder="Portfolio link*">
+    <textarea name="another" id="another" cols="30" rows="10" placeholder="anything else"></textarea>
+   </section>
+   <button type="submit">Submit</button>
+  </form> 
+</body>
+</html>

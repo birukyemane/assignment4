@@ -17,17 +17,17 @@
      <h3>1. Personal information</h3>
      <hr>  
      <div class="personalInfo">
-      <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*" required>     
+      <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*" required pattern="[A-Za-z' -]+">     
       <input id="phones" class="inputSmall" type="text" name="phones" placeholder="Phones*" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">  
       <input id="email" class="inputMedium" type="email" name="email" placeholder="Email*" required> 
       <input id="ReEnterEmail" class="inputMedium" type="email" name="ReEnterEmail" placeholder="Re-enter email*" required> 
-      <input id="address1" class="inputLarge" type="text" name="address1" placeholder="Address*" required> 
-      <input id="address2" class="inputLarge" type="text" name="address2">      
-      <input id="city" class="inputSmall" type="text" name="city" placeholder="City*" required> 
-      <input id="state" class="inputSmall" type="text" name="state" placeholder="State">
-      <input id="country" class="inputSmall" type="text" name="country" placeholder="Country/Region*">
-      <input id="zip" class="inputSmall" type="text" name="zip" placeholder="Zip/Postal code">         
-      <input id="aboutUS" class="inputLarge" type="text" name="aboutUS" placeholder="How did you hear about us">
+      <input id="address1" class="inputLarge" type="text" name="address1" placeholder="Address*" required pattern="[A-Za-z0-9' -,.]+">  
+      <input id="address2" class="inputLarge" type="text" name="address2" pattern="[A-Za-z0-9' -,.]+">      
+      <input id="city" class="inputSmall" type="text" name="city" placeholder="City*" required pattern="[A-Za-z' -]+"> 
+      <input id="state" class="inputSmall" type="text" name="state" placeholder="State" pattern="[A-Za-z' -]+">
+      <input id="country" class="inputSmall" type="text" name="country" placeholder="Country/Region*" pattern="[A-Za-z' -]+">
+      <input id="zip" class="inputSmall" type="text" name="zip" placeholder="Zip/Postal code" pattern="[0-9]{5}">         
+      <input id="aboutUS" class="inputLarge" type="text" name="aboutUS" placeholder="How did you hear about us" maxlength="50">
      </div>   
  
    </section>
@@ -89,7 +89,7 @@
     <input id="portfolio" class="inputLarge" type="url" name="portfolio" placeholder="Portfolio link*" required>
     <br />
     <br />
-    <textarea name="another" id="another" cols="30" rows="10" placeholder="anything else(another link availability)?"></textarea>
+    <textarea name="another" id="another" cols="30" rows="10" placeholder="anything else(another link availability)?" maxlength="200"></textarea>
     <br />
   </section>
    <button type="submit">Submit</button>

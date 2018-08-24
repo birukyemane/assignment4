@@ -19,12 +19,20 @@ h3 {
   margin-bottom: 20px;
 }
 
-input:invalid {
-  border: 2px dashed red;
+
+input:focus:invalid,textarea:focus:invalid{
+  /* border:2px solid red; */
+  outline:none;
+  border:none;
+  border-radius: 2px;
+  box-shadow:0 0 2px 1px red;
 }
 
-input:valid {
-  border: 2px solid black;
+input:focus:valid,textarea:focus:valid {
+  outline:none;
+  border:none;
+  border-radius: 2px;
+  box-shadow:0 0 2px 1px rgb(72, 245, 19);
 }
 
 /* header*/

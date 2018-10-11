@@ -19,9 +19,8 @@ h3 {
   margin-bottom: 20px;
 }
 
-
+/*
 input:focus:invalid,textarea:focus:invalid{
-  /* border:2px solid red; */
   outline:none;
   border:none;
   border-radius: 2px;
@@ -33,6 +32,13 @@ input:focus:valid,textarea:focus:valid {
   border:none;
   border-radius: 2px;
   box-shadow:0 0 2px 1px rgb(72, 245, 19);
+} */
+
+.valid:focus {
+  box-shadow:0 0 2px 1px rgb(72, 245, 19);
+}
+.invalid:focus {
+  box-shadow:0 0 2px 1px red;
 }
 
 /* header*/
@@ -73,9 +79,9 @@ input, textarea{
 }
 
 .inputSmall{
-  width: 24%;  
-
+  width: 24%; 
 }
+
 .inputMedium {
   width: 74%;
 }
@@ -122,16 +128,12 @@ input, textarea{
   justify-content: space-between;
   flex-flow: wrap;
 }
-
  
 .intersts , .locations {
   flex: 1;
 }
 
-
-
 /* form  portfolio section*/
-
 textarea {
   width: 100%;
   height: 100px;
@@ -141,12 +143,15 @@ textarea {
 
 button[type="submit"] {
   width: 20%;
-  background: #00b5ee;
   padding: 20px;
   margin-top: 30px;
   font-size: 1rem;
   color: #fff;
   border: none;
+}
+
+.submit-button {
+  background:#3bd33b;
 }
 
 

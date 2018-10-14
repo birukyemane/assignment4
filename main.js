@@ -9,11 +9,11 @@ const button = document.querySelector ('button');
 
 
 const patterns = {
-  fullName: /fullName/,
-  phones: /phones/,
+  fullName: /[A-Za-z' -]{2,50}/,
+  phones: /[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}/,
   email:/email/,
   ReEnterEmail: /ReEnterEmail/,
-  address1: /address1/,
+  address1: /[A-Za-z0-9' -,.]+/,
   address2: /address2/,
   city:/city/,
   state: /state/,

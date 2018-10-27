@@ -18,16 +18,27 @@
      <hr>  
      <div class="personalInfo">
       <input id="fullName" class="inputMedium" type="text" name="fullName" placeholder="Full name*">     
-      <input id="phones" class="inputSmall" type="text" name="phones" placeholder="Phones*">  
+      <p>Full name must be letters and can contain space and special characters(,-.')</p>
+      <input id="phones" class="inputMedium" type="text" name="phones" placeholder="Phones*">  
+      <p>Phone must be 10 digits: xxx-xxx-xxxx</p>
       <input id="email" class="inputMedium" type="email" name="email" placeholder="Email*"> 
+      <p>Email alpahnumeric characters sparaed by @ and proper doman name : abc@ddd.com</p>
       <input id="ReEnterEmail" class="inputMedium" type="email" name="ReEnterEmail" placeholder="Re-enter email*"> 
+      <p>Email alpahnumeric characters sparaed by @ and proper doman name : abc@ddd.com</p>
       <input id="address1" class="inputLarge" type="text" name="address1" placeholder="Address*">  
-      <input id="address2" class="inputLarge" type="text" name="address2" pattern="[A-Za-z0-9' -,.]+">      
-      <input id="city" class="inputSmall" type="text" name="city" placeholder="City*"> 
-      <input id="state" class="inputSmall" type="text" name="state" placeholder="State">
-      <input id="country" class="inputSmall" type="text" name="country" placeholder="Country/Region*">
-      <input id="zip" class="inputSmall" type="text" name="zip" placeholder="Zip/Postal code">         
+      <p>Address must be alpahnumeric characters and can contain space and special characters(,-.')</p>    
+      <input id="address2" class="inputLarge" type="text" name="address2" pattern="[A-Za-z0-9' -,.]+"> 
+      <p>Address must be alpahnumeric characters and can contain space and special characters(,-.')</p>       
+      <input id="city" class="inputMedium" type="text" name="city" placeholder="City*"> 
+      <p>City must be alpahnumeric characters and can contain space and special characters(,-.')</p>   
+      <input id="state" class="inputMedium" type="text" name="state" placeholder="State">
+      <p>State must be alpahnumeric characters and can contain space and special characters(,-.')</p>
+      <input id="country" class="inputMedium" type="text" name="country" placeholder="Country/Region*">
+      <p>Country must be alpahnumeric characters and can contain space and special characters(,-.')</p> 
+      <input id="zip" class="inputMedium" type="text" name="zip" placeholder="Zip/Postal code">  
+      <p>Zip code must be exactly 5 digits: 00700</p>  
       <input id="aboutUS" class="inputLarge" type="text" name="aboutUS" placeholder="How did you hear about us">
+      <p>About can be any characters</p>   
      </div>   
  
    </section>
@@ -87,9 +98,11 @@
     <hr>
     <p>Prove you're IBM's next great desinger by showing us who your are. What you have done. How you think. Tell us your story. </p>
     <input id="portfolio" class="inputLarge" type="url" name="portfolio" placeholder="Portfolio link*">
+    <p>Portfolio must be a URL</p>  
     <br />
     <br />
     <textarea name="another" id="another" cols="2" rows="1" placeholder="anything else(another link availability)?"></textarea>
+    <p>Another info can be any characters</p>   
     <br />
   </section>
    <button type="submit" disabled>Submit</button>

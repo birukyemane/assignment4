@@ -9,15 +9,15 @@ const button = document.querySelector ('button');
 
 
 const patterns = {
-  fullName: /[A-Za-z' -]{2,50}$/,
-  phones: /[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}$/,
+  fullName: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
+  phones: /[0-9]{3}[ -][0-9]{3}[-][0-9]{4}$/,
   email:/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
   ReEnterEmail: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
-  address1: /[A-Za-z0-9' -,.]+$/,
-  address2: /[A-Za-z0-9' -,.]+$/,
-  city:/[A-Za-z0-9' -,.]+$/,
-  state: /[A-Za-z0-9' -,.]+$/,
-  country: /[A-Za-z0-9' -,.]+$/,
+  address1: /^[a-zA-Z0-9]+(([',. -][a-zA-Z0-9 ])?[a-zA-Z0-9]*)*$/,
+  address2: /^[a-zA-Z0-9]+(([',. -][a-zA-Z0-9 ])?[a-zA-Z0-9]*)*$/,
+  city:/[A-Za-z0-9' \-,.]+$/,
+  state: /[A-Za-z0-9' \-,.]+$/,
+  country: /[A-Za-z0-9' \-,.]+$/,
   zip:/^\d{5}$/,
   aboutUS: /.{0,50}$/,
   portfolio: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/,
